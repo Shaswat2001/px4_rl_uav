@@ -34,12 +34,14 @@ $ cd ~/colcon_ws
 $ colcon build
 ```
 
+Extract the RL weights zip file present in ```weights``` folder in ```~/colcon_ws/config/saves/training_weights```.
+
+#### Small changes in PX4
+
 To add the desired world into PX4, copy the ```iris_rplidar.world``` file to ```/path/to/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/iris_rplidar.world```.
 
 
 Also, replace the ```iris_rplidar```, ```rplidar``` and ```lidar``` folder in ```/path/to/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models``` folder with the one given in ```misc``` folder in this repository. 
-
-
 
 ### Demo 
 
