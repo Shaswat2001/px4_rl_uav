@@ -60,3 +60,8 @@ $ cd ~/ros_ws
 $ source install/setup.bash
 $ ros2 run px4_rl_uav px4_test.py
 ```
+
+
+<p align="center">
+<img src="./misc/PX4_UAV.gif" width="400" alt="inn_traj">
+</p>
