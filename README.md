@@ -1,5 +1,11 @@
 ## PX4 Simulation for Path Planning of UAV using RL
 
+
+### System Requirements
+
+* ROS2 foxy
+* Ubuntu 20.04
+
 ### Installing PX4
 
 To setup PX4 with ROS2 foxy and gazebo, follow the installation steps outlined in [link](https://docs.px4.io/main/en/ros/ros2_comm.html). While installing ```PX4-Autopilot```, make a small change if you are working on ARM architecture based system -
@@ -27,6 +33,13 @@ To build the workspace -
 $ cd ~/colcon_ws
 $ colcon build
 ```
+
+To add the desired world into PX4, copy the ```iris_rplidar.world``` file to ```/path/to/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds/iris_rplidar.world```.
+
+
+Also, replace the ```iris_rplidar```, ```rplidar``` and ```lidar``` folder in ```/path/to/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models``` folder with the one given in ```misc``` folder in this repository. 
+
+
 
 ### Demo 
 
